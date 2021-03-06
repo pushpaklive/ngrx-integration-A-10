@@ -1,0 +1,33 @@
+.top10Products {
+  background-color: #fff;
+  padding: 13px;
+  margin: 13px;
+  box-shadow: 1px 1px 3px lightgray;
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.top-products-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 6%;
+}
+
+.product-name {
+  padding-top: 7px;
+  position: relative;
+  top: -14px;
+  left: 66px;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.products-chart {
+  box-shadow: 2px 2px 5px lightgray;
+  margin: 10px;
+  position: relative;
+  left: -20px;
+}
