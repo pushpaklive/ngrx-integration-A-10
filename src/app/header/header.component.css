@@ -1,0 +1,35 @@
+.cards-container {
+  display: grid;
+  grid-column-gap: 0.25%;
+  grid-template-columns: 24.8% 24.8% 24.8% 24.8%;
+  padding: 0px;
+}
+
+.colored-card {
+  padding: 25px 20px;
+  margin-right: 8px;
+  font-size: 26px;
+  text-align: center;
+  color: #fff;
+  margin-top: 13px;
+  border-radius: 13px;
+}
+
+.colored-card strong{
+    font-size: 58px;
+}
+
+.left-footer{
+  float: left;
+  position: relative;
+  font-size: 17px;
+  padding-top: 20px;
+  top: 13px;
+}
+.right-footer{
+  float: right;
+  position: relative;
+  font-size: 17px;
+  top: 15px;
+  padding-top: 20px;
+}

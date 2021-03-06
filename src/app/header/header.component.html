@@ -1,0 +1,29 @@
+<div class="cards-container">
+  <ng-container *ngFor="let item of salesDetails">
+    <div
+      *ngIf="!item.isChart"
+      [ngStyle]="{ 'background-color': item.color }"
+      class="colored-card"
+    >
+      <span>{{ item.label }}</span>
+      <hr class="" />
+      <span
+        ><strong>${{ item.profit }}M</strong></span
+      >
+      <br />
+      <span class="left-footer"
+        >Previous Year <br />${{ item.previousYearProfit }}M</span
+      >
+      <span class="right-footer">Increased by <br />{{ item.change }}%</span>
+    </div>
+    <div *ngIf="item.isChart">
+      <div #charts [ngStyle]="{ width: '100%', height: '250px' }"></div>
+      <!-- <highcharts-chart
+        [Highcharts]="highcharts"
+        [options]="chartOptions"
+        style="width: 100%; height: 400px; display: block"
+      >
+      </highcharts-chart> -->
+    </div>
+  </ng-container>
+</div>
